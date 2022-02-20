@@ -9,4 +9,4 @@ RUN npm install
 #RUN npm install -g serve
 
 CMD ["npm", "start"]
-#CMD ["serve", "-s", "-l", "$PORT", "build"]
+#CMD ["serve", "-s", "-l", "5000", "build"]
