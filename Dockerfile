@@ -1,11 +1,12 @@
-FROM ubuntu:18.04
+FROM node:14
 
 WORKDIR /usr/src/app
 
 COPY . .
 RUN npm install
-RUN npm run build
+#RUN npm run build
 
-RUN npm install -g serve
+#RUN npm install -g serve
 
-CMD ["serve", "-s", "-l", "5000", "build"]
+CMD ["npm", "start"]
+#CMD ["serve", "-s", "-l", "5000", "build"]
